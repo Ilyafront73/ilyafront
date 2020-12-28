@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.woff") format("woff");
+  src: url("fonts/Roboto-Regular.woff") format("woff");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Medium.woff") format("woff");
+  src: url("fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Bold.woff") format("woff");
+  src: url("fonts/Roboto-Bold.woff") format("woff");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Black.woff") format("woff");
+  src: url("fonts/Roboto-Black.woff") format("woff");
   font-weight: 900;
   font-display: swap;
   font-style: normal;
@@ -408,11 +408,11 @@ textarea {
 }
 
 .swiper-button-next {
-  background-image: url("../img/right-arrow.svg");
+  background-image: url("right-arrow.svg");
 }
 
 .swiper-button-prev {
-  background-image: url("../img/left-arrow.svg");
+  background-image: url("left-arrow.svg");
 }
 
 .swiper-button-prev,
@@ -589,7 +589,7 @@ textarea {
 
 .social__link {
   display: inline-block;
-  background-image: url("../img/sprites.png");
+  background-image: url("sprites.png");
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
