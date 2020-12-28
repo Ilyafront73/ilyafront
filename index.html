@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Дмитрий Алексеев | Frontend-разработчик и веб-верстальщик</title>
+    <link rel="stylesheet" href="styles/swiper.min.css" />
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+    
+   
+
+</head>
+
+<body>
+    <div class="site-container">
+
+
+        <div class="popup__container popup">
+            <div class="form-popup">
+                <button class="popup__close"></button>
+                <h2 class="popup__title">Оставить заявку</h2>
+                <p class="popup__text">Заполните все поля и в течение 24 часов мы свяжемся с Вами</p>
+                <form action="mail.php" method="POST" enctype="multipart/form-data" class="popup__form">
+
+                    <input type="hidden" name="project_name" value="Test" />
+                    <input type="hidden" name="admin_email" value="ilya.sampetov46@mail.ru" />
+                    <input type="hidden" name="form_subject" value="Тема" />
+
+                    <label class="form__label" for="full-name">Имя Фамилия:</label>
+                    <input type="text" id="full-name" class="form__input" placeholder="Иван Иванов" name="name">
+
+
+                    <label class="form__label" for="full-number">Номер телефона:</label>
+                    <input type="tel" name="tel" id="full-number" class="form__input" placeholder="+7 (___) ___-____">
+
+
+                    <label class="form__label" for="full-email">Электроная почта:</label>
+                    <input type="email" name="email" id="full-email" class="form__input" placeholder="example@mail.ru">
+
+
+                    <label class="form__label" for="form-comment">Ваши пожелания:</label>
+                    <textarea class="comment" id="form-comment" name="form-comment"></textarea>
+
+                    <p class="popup__info">
+                        *Мы не передаем Вашу персональную информацию третьим лицам!
+                    </p>
+
+                    <input type="submit" class="popup__btn">
+
+                </form>
+
+
+            </div>
+        </div>
+
+
+
+        <header class="header">
+            <div class="fixed-container header__container">
+                <button class="header__burger"></button>
+                <!-- header nav -->
+                <nav class="header__nav nav">
+                    <ul class="nav__list list-reset">
+                        <li class="nav__item"><a href="#" class="nav__link js__link_first">Услуги</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link js__link_second">Портфолио</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link js__link_third">Стоимость</a></li>
+                    </ul>
+                </nav>
+                <!-- right side of header -->
+                <a href="#" class="header__number">+7 (499) 995-55-77</a>
+                <button class="btn-reset header__btn btn-js">Заказать Звонок</button>
+               <span class=" btn-js header__phone--icon"><i class="fa fa-phone header__phone" aria-hidden="true"></i></span>
+               
+
+
+
+            </div>
+        </header>
+        <main class="main">
+            <!-- about -->
+            <section class="section about">
+                <span class="fly-tag tag-braces ">{&nbsp;}</span>
+                <span class="fly-tag tag-div--upper "> &lt;div&gt; </span>
+                <span class="fly-tag tag-hash ">#</span>
+                <span class="fly-tag tag-div--lower "> &lt;div&gt; </span>
+                <span class="fly-tag tag-closed--upper ">&lt;/&gt;</span>
+                <span class="fly-tag tag-closed--lower ">&lt;/&gt;</span>
+                <div class="fixed-container about__container">
+                    <div class="about-info">
+                        <h1 class="about-info__title">Дмитрий Алексеев
+                            <p class="about-info__post">
+                                Frontend-разработчик и веб-верстальщик
+                            </p>
+                        </h1>
+                        <button type="button" class="about-info__btn btn-reset">
+                            Узнать больше
+                        </button>
+                        <div class="about-info__text">
+                            Умение работать с&nbsp;сайтами любой сложности. Для меня главное
+                            в&nbsp;моей работе это качество и&nbsp;положительные эмоции моих клиентов.
+                            Знание таких языков кадировки и&nbsp;программирования как HTML, HTML5,
+                            CSS, CSS3 и&nbsp;JavaScript
+                        </div>
+
+
+
+                    </div>
+
+
+                    <img alt="Дмитрий Алексеев Frontend-разработчик" src="img/shutterstock_574398823.png"
+                        class="about__photo">
+
+                  
+                </div>
+                
+                
+                <picture>
+                    <source media="(max-width:320px)" srcset="img/Ellipse_320.svg">
+                    <source media="(max-width:1024px)" srcset="img/ellipse_1024.svg">
+                    <img alt="Фон для фото" src="img/Ellipse_1.svg" class="about__svg">
+                
+                    <source>
+                </picture>
+
+            </section>
+
+
+            <section class="services">
+                <div class="fixed-container">
+                    <h2 class="services__title title">Что я делаю</h2>
+                    <ul class="services-types list-reset">
+                        <!-- 1 -->
+
+
+                        <li class="services__type">
+                            <img src="img/tools-and-utensils.png" alt="Вёрстка лендинг-страниц и сайтов любой сложности"
+                                class="services__type-image" />
+                            <p class="services__description description">
+                                Вёрстка лендинг&mdash;страниц<br />
+                                и сайтов любой сложности
+                            </p>
+                        </li>
+
+                        <!-- 2 -->
+                        <li class="services__type">
+                            <img src="img/responsive.png" alt="Адаптивная вёрстка под все браузеры и устройства"
+                                class="services__type-image" />
+                            <p class="services__description description">
+                                Адаптивная вёрстка под все<br />
+                                браузеры и устройства
+                            </p>
+                        </li>
+
+                        <!-- 3 -->
+
+
+                        <li class="services__type">
+                            <img src="img/programming.png" alt="Frontend-разработка и программирование"
+                                class="services__type-image" />
+                            <p class="services__description description">
+                                Frontend&mdash;разработка<br />
+                                и программирование
+                            </p>
+                        </li>
+                        <!-- 4 -->
+                        <li class="services__type">
+                            <img src="img/coding_(1).png" alt="Исправление и доработка существующей верстки"
+                                class="services__type-image" />
+                            <p class="services__description description">
+                                Исправление и доработка<br />
+                                существующей верстки
+                            </p>
+                        </li>
+
+                    </ul>
+                    <button class="btn btn-fill btn-reset services__btn modal-open btn-js" type="button">
+                        Узнать стоимость
+                    </button>
+                </div>
+            </section>
+
+
+
+            <section class="portfolio">
+                <div class="porfolio__container fixed-container">
+                    <h2 class="portfolio__title title">Примеры моих работ</h2>
+                    <div class="portfolio__btn-group">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="img/Layer_2.png" alt="Сайт" class="portfolio__img">
+                                <h3 class="portfolio__desc">Cайт психолога Веры Антоновой</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/Layer_1.png" alt="Сайт" class="portfolio__img">
+                                <h3 class="portfolio__desc">Сайт магазина детской одежды</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/Layer_3.png" alt="Сайт" class="portfolio__img">
+                                <h3 class="portfolio__desc">Сайт магазина «Рыболов»</h3>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+
+                    <button class="portfolio__btn btn btn-js">Заказать проект</button>
+                </div>
+            </section>
+
+            <section class="criteria__section criteria">
+                <span class="criteria-tag ad-braces">{&nbsp;}</span>
+                <span class="criteria-tag ad-div">&lt;div&gt;</span>
+                <span class="criteria-tag ad-hash">#</span>
+                <span class="criteria-tag ad-braces2">{&nbsp;}</span>
+                <span class="criteria-tag ad-closed">&lt;/&gt;</span>
+                <div class="criteria__container fixed-container">
+                    <h3 class="criteria__title">Адаптивная вёрстка под все устройства
+                        и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*</h3>
+                    <p class="criteria__item">
+                       * Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных
+                        и рассчитываются индивидуально,
+                        в&nbsp;зависимости от&nbsp;сложности задач.
+                    </p>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container fixed-container">
+
+                <ul class="footer-item">
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="#">Стоимость</a></li>
+                </ul>
+
+                <ul class="footer-contacts">
+                    <li>
+                        <i class="fa fa-phone phone" aria-hidden="true"></i>
+                        <a href="#" class="contacts-phone">
+
+                            +7 (499) 995-77-55</a></li>
+                    <li><i class="fa fa-envelope mail" aria-hidden="true"></i>
+
+                        <a href="#" class="contacts-mail">
+
+                            dmitry@alekseev.com</a></li>
+                </ul>
+
+                <div class="social__container">
+                    <button class="btn-footer btn-js">Заказать звонок</button>
+
+                    <ul class="footer-social">
+
+                        <li class="social__item"><a href="#" class="social__link social__link--vk" aria-label="vk"></a>
+                        </li>
+                        <li class="social__item"><a href="#" class="social__link social__link--fb"
+                                aria-label="facebook"></a></li>
+                        <li class="social__item"><a href="#" class="social__link social__link--tw"
+                                aria-label="twitter"></a></li>
+                        <li class="social__item"><a href="#" class="social__link social__link--inst"
+                                aria-label="instagram"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-text">
+                © Дмитрий Алексеев, 2016 – 2018
+            </div>
+        </footer>
+
+        <script src="https://use.fontawesome.com/b023a68e5e.js"></script>
+
+        <script src="script/jquery-3.5.1.min.js"></script>
+        <script src="script/script.js"></script>
+        <script src="script/swiper.min.js"></script>
+        <script src="script/slider.js"></script>
+        <script src="script/jquery.inputmask.min.js"></script>
+        <script src="script/jquery.validate.min.js"></script>
+
+
+    </div>
+</body>
+
+
+</html>
