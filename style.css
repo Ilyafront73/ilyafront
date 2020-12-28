@@ -885,23 +885,6 @@ textarea {
   }
 }
 
-/* @media (max-width: 1200px) {
-  .about__svg {
-    right: -255px;
-  }
-  .ad-hash {
-    top: 290px;
-  }
-  .ad-braces {
-    top: 20px;
-  }
-  .ad-closed {
-    top: 35px;
-  }
-  .about-info__title{
-    font-size: 54px;
-  }
-} */
 
 @media (max-width: 1024px) {
   .header__nav {
